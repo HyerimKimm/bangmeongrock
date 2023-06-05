@@ -6,6 +6,7 @@ const port = 4999;
 const 방명록router = require('./router/bangmeongrockRouter');
 
 server.use(cors());
+server.use(express.json());
 
 server.use('/bangmeongrock', 방명록router);
 
